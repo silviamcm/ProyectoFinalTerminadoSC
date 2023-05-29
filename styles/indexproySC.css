@@ -1,0 +1,584 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    max-width: 1200px;
+    width: 90%;
+    height: inherit;  
+}
+/*navegador*/
+header .main-container nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: inherit;
+    justify-content: end;
+    align-items: center;
+}
+header .main-container nav ul{
+    display: inline;
+    list-style: none;
+    margin-top: 30px;
+
+}
+header .main-container nav ul li{
+    display: inline;
+}
+header .main-container nav ul li a{
+    color:#26462e;
+    padding: 19px;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .main-container nav ul li a:hover{
+    background-color:#a1b3918a ;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    color: #bf97f8;
+
+}
+
+/*HEADER*/
+img#logo1{
+    display: flex;
+    position: absolute;
+    width: 23%;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+
+/*_____________________________*/
+
+/*MAIN INDEX*/
+main{
+    width: 100%;
+    height: auto;
+}
+.container-1{
+    display: flex;
+    flex-direction: row;
+    background-color:#536f5d;
+    height: 450px;
+    width: inherit;
+    gap: 15px;/* le da espacio a las cajitas*/
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../assent/imagen/portada.jpg);
+}
+
+.container-0{
+    border-color: 2px solid rgb(0, 0, 0);
+    width: inherit;
+    height: 60px;
+}
+.container-0 .parrafo3{
+    display:inline;
+    position:absolute;
+    width: inherit;
+    height: 50px;
+    color: #26462e;
+}
+.container-0 .parrafo3 p:hover{
+    color: #536f5d;
+    font-size: 25px;
+    box-shadow: 0px 5px 10px 0px #dedd66;
+
+}
+
+/*_____________________________*/
+
+/*-----------------------------FLIP CARD------------------------------*/
+.flip {
+    background-color: transparent;
+    width: 430px;
+    height: 280px;
+    border: 1px solid #dedd66;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+
+}
+.flip_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip:hover .flip_inner{
+    transform: rotateY(180deg);
+}
+.flip_front, .flip_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+} 
+.flip_front{
+    background-color: #bbb;
+    color: black;
+
+}
+.flip_back{
+    background-color:#dedd66;
+    color: #26462e;
+    transform: rotateY(180deg);
+
+}
+.flip .flip_back a{
+    padding: 7px;
+    background: #3c3c3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 20px;
+    transition: all 0.2s ease 0s;
+    line-height: 3;
+}
+.flip .flip_back a:hover {
+    background: #fff;
+    color: #3c3c3b;
+    text-shadow: 0 0 1px #3c3c3b;
+}
+.flip .flip_back h3,p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.parr3{
+    width: inherit;
+    height: 2%;
+    background-color: rgba(105, 110, 30, 0.712);
+    padding: 7px;
+    /*background-image: url(../assent/imagen/portada.jpg);*/
+}
+
+.parr3 p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:520;
+    line-height: 1.5;
+}
+.lista{
+    color:white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+
+}
+
+/*--------------------------ID-------------------------------*/
+img#instagram{
+    display: block;
+    width:3%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*Footer*/
+img#fin{
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto
+
+}
+footer#pie{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(23, 66, 63);
+}
+/*---------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+
+
+.medidasContenedora{
+    width: 100%;
+    height: 200px;  
+}
+
+.fondoImg{
+    background-color: aquamarine;
+    background-image: url(..//assent/imagen/fondo.jpg);
+    background-repeat: no-repeat; /*Esto implica que no se repita pero tiene otras opciones ya sea vertical u horizontal*/
+    background-position: center center ;
+/*position: acepta pixceles o right,left, top, down, center*/
+    background-size: cover; 
+}
+
+.fondoImg h1{
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700px;
+    padding: 72px;
+
+}
+.espacio{
+    margin: 20px 0px;
+}
+/*-----------------EVENTO------------*/
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    gap: 50px;/* le da espacio a las cajitas*/
+    align-items: start;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(../assent/imagen/portada.jpg);
+    
+}
+.caja{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid #dedd66;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}
+/*----------------- FIN EVENTO------------*/
+
+/*--------------Input imagen index-------*/
+.container-2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 110, 30, 0.767);
+    height: 900px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assent/imagen/fondo1.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.container-2 .box1:hover{
+    box-shadow: 0 12px 12px 0  #213b27   ;
+
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 25px;
+    color: black;
+    text-align: center;
+    display: block;
+    width:1000px;
+    height: 700px;
+}
+.box2 p{
+    width: 900px;
+    height: 100px;
+    border: 5px solid #dedd66;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box2_1 p{
+    width: 1000px;
+    height: 100px;
+    border: 5px solid #dedd66;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.parr4{
+    color:  rgba(105, 110, 30, 0.918);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+}
+
+/*-------------- FIN Input imagen index-------*/
+
+
+/*---------------INICIO Quienes somos-----------*/
+.somos-1{
+    background-color: #26462e;
+}
+.container-3{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1200px;
+    gap: 0px;
+    align-items:center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #26462e;
+}
+.box3{
+    background-color:  #26462e;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    display: block;
+    width:450px;
+    height: 500px;
+
+}
+
+
+
+/*______________INICIO______________INFO DE LA DECORADORA______________*/
+/*Perfil*/
+.perfil{
+    transition: 0.3s;
+    width: 300px;
+    height: inherit;
+    margin-left: 75px;
+    text-align: center;
+    background-color:#a1b391;
+    color:#213b27;
+    font-weight: bold;
+    font-size: 11px;
+}
+.perfil img{
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid #dedd66;
+}
+.perfil:hover{
+    box-shadow: 8px 0px 20px 0px  #dedd66;
+}
+/*Caja con info de la decoradora*/
+.box4{
+    /*background-color:rgba(105, 110, 30, 0.767);*/
+    height: inherit;
+    width: 750px;
+}
+.box4 h2{
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+    font-style: oblique;
+    margin-top: 40px;
+    border: 3px solid #dedd66;
+}
+.box4 ul{
+    margin: 45px;
+    color: white;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+    font-size: 20px;
+    line-height: 2;
+}
+/*______________FIN_______________INFO DE LA DECORADORA______________*/
+
+/*---------------------------------------------------------*/
+.container-4{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assent/imagen/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+/*_____________________________*/
+
+/*-----------------------------FLIP CARD------------------------------*/
+.flip1 {
+    background-color: transparent;
+    width: 380px;
+    height: 280px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip_inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip1:hover .flip_inner1{
+    transform: rotateY(180deg);
+}
+.flip_front1, .flip_back1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+} 
+.flip_front1{
+    background-color:#26462e;
+    color: #ffffff;
+    border: 2px solid #dedd66;
+
+}
+.flip_back1{
+    background-color:#dedd66;
+    color: #26462e;
+    transform: rotateY(180deg);
+}
+.flip1 .flip_back1 a{
+    padding: 7px;
+    background: #3c3c3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 20px;
+    transition: all 0.2s ease 0s;
+    line-height: 3;
+}
+.flip1 .flip_back1 a:hover {
+    background: #fff;
+    color: #3c3c3b;
+    text-shadow: 0 0 1px #3c3c3b;
+}
+.flip1 .flip_back1 h3,p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+/*-----------------FIN Quienes somos-----------*/
+
+
+/*_____INICIO________Contactenos_______________*/
+.medidaFondo3{
+    width: 100%;
+    height: 400px; 
+    background-color: #536f5d;
+    border: 5px solid  #dedd66;;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../assent/imagen/portada.jpg);
+}
+.medidaFondo4{
+    width: 870px;
+    height: 340px; 
+    background-color: rgb(255, 255, 255);
+    margin: 25px 0 50px 200px;
+    border-radius: 20px;
+    line-height: 0.5px;
+}
+.parrafoForm {
+    margin: 25px;
+    color:#213b27;
+    font-size: 22.5px;
+    font-family: Tahoma;
+    font-style:normal;
+}
+.parrafoForm p{
+    margin: 20px;
+    color: #213b27;
+    font-size: 30px;
+    font-family: Tahoma;
+    text-align: center;
+}
+.parrafoForm input{
+    margin: 20px;
+    border-radius: 4px;
+    color: #213b27;
+    border-color:  rgb(117, 148, 148);   
+}
+.parrafoForm div {
+    text-align: center;
+    font-size: 22px;
+
+}
+/*_____FIN___________Contactenos_______________*/
+
+/*_____INICIO___________LOGO_Galeria_______________*/
+.galeria{
+    width: 90%;
+    height: 115px;
+    color: white;
+    background-color:#a1b391;
+    border: 2px solid #26462e;
+    border-radius: 50px;
+    margin-left: 70px;
+}
+.galeria a{
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+/*_____FIN___________Galeria_______________*/
+
+/*_____INICIO________Galeria_______________*/
+
+.galeriatype{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1;
+    width: 100%;
+    padding: 20px;
+    background-color: #536f5d;
+}
+
+.cuadro{
+	border:1px solid black;
+	width:650px;
+	display:inline-block;
+	height:450px;
+	overflow:hidden;
+    margin-left: 15px;
+}
+.uno{
+	background-image: url(../assent/imagen/portada.jpg);
+	}
+
+/*_____FIN___________Galeria_______________*/
